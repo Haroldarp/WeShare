@@ -1,0 +1,10 @@
+<form class="d-flex w-100">
+    <input class="form-control me-2" type="search" placeholder="Search for free photos" (keyup.enter)="search()"
+    aria-label="Search for free photos" [formControl]="searchInput" matInput [matAutocomplete]="auto">
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+        <mat-option *ngFor="let item of filteredOptions | async" [value]="item">
+          {{item}}
+        </mat-option>
+      </mat-autocomplete>
+    <button class="btn btn-danger" type="submit" (click)="search()">Search</button>
+</form>

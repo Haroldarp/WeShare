@@ -1,0 +1,12 @@
+<a class="gallery__link">
+    <figure class="gallery__thumb" (click)="onImageClick()">
+        <img [defaultImage]="defaultImage" [lazyLoad]="imageUrl" [offset]="10" alt="Portrait by Jessica Felicio" class="gallery__image">
+        <figcaption class="gallery__caption">
+            <div class="d-flex justify-content-end">
+                <div (click)="onDownload($event)">
+                    <fa-icon [icon]="faDownload" ></fa-icon>
+                </div>
+            </div> 
+        </figcaption>
+    </figure>
+</a>

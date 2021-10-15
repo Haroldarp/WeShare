@@ -28,12 +28,18 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/assets/icons/logo.ico"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/colcade/colcade.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,7 +100,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           }
@@ -127,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "WeShare"
+  "defaultProject": "WeShare",
+  "cli": {
+    "analytics": "6e38e943-dd1c-44e0-9736-ac5ecf77bc67"
+  }
 }

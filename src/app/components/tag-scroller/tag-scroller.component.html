@@ -1,0 +1,6 @@
+<div class="scroller-container">
+    <div *ngFor="let tag of tags" class="tag" [routerLink]="['/search', tag.TagName]">
+        <p class="quantity"> {{tag.Quantity}} </p>
+        <p> {{tag.TagName}} </p>
+    </div>
+</div>

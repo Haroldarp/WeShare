@@ -1,0 +1,44 @@
+.scroller-container{
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroller-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.tag{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    color: #ffff;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgba(10, 10, 10, 0.3);
+    padding: 5px 7px;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: capitalize;
+    min-width: fit-content;
+    background-color: #dc3545;
+
+    p{
+        margin: 0;
+    }
+    
+    .quantity{
+        background-color: #ffff;
+        color: #dc3545;
+        padding: 1px;
+        border-radius: 20px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+    }
+}

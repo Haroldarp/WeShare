@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="title-container">
+        <h1 class="title">{{tagName}} Images</h1>
+        <p class="sub-title">We have an excellent collection of high-quality {{tagName}} images and {{tagName}} pictures for you to choose from.</p>
+    </div>
+    <app-tag-scroller></app-tag-scroller>
+
+    <div class="flex-wrap-container">
+        <app-image-container *ngFor="let image of imagesToLoad" [imageUrl]="image.ImageURL" 
+        (imageClick)="onImageClick($event)" (download)="downloadImage($event)"></app-image-container>
+    </div>
+</div>
+
+<div id="myModal" class="modal" [ngClass]="{'show': popupOpen}">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <img class="modal-content" src="{{popupImageUrl}}">]
+</div>
